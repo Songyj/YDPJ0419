@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginBottom="10dp">
+
+
+    <ImageView
+        android:id="@+id/award_img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitCenter"
+       />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="20dp">
+        <TextView
+            android:id="@+id/award_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11dp"
+            android:textColor="@color/green"
+            android:text="Type"/>
+        <TextView
+            android:id="@+id/award_context"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textSize="11dp"
+            android:textColor="@color/darkgray"
+            android:text="Context"
+            />
+
+        <TextView
+            android:id="@+id/award_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:textSize="7dp"
+            android:textColor="@color/lightgray"
+            android:text="Time"
+            />
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

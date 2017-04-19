@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/titlegray"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/backhome"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/titlegray"
+            android:scaleType="centerInside"
+            android:src="@drawable/leftarray"
+            />
+        <TextView
+            android:id="@+id/eva_text_title"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@color/titlegray"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginRight="120dp"
+            android:text="我的评价"
+            android:textColor="@color/darkgray"
+            android:textSize="15dp"/>
+        <TextView
+
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:gravity="center">
+
+
+            <TextView
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:id="@+id/textView3"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/green"
+                android:textSize="13dp"
+                android:text="自我评价" />
+
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:background="@color/lightgray"/>
+
+            <TextView
+               android:layout_margin="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/textView4"
+                android:textColor="@color/darkgray"
+                android:textSize="13dp"
+                android:layout_height="wrap_content"
+
+                android:text="评价他人" />
+        </LinearLayout>
+    </LinearLayout>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/border"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/titlegray"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/look_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:overScrollMode="never"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+        </android.support.v7.widget.RecyclerView>
+
+
+
+</RelativeLayout>
+</LinearLayout>
+

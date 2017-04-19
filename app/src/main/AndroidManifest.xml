@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.wangjie">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Public.MainActivity">
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+        </activity>
+        <activity android:name=".Login.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login.ResignActivity" />
+        <activity android:name=".Page1.self_EvaluationActivity" />
+        <activity android:name=".Page1.others_EvaluationActivity" />
+        <activity android:name=".Page1.look_evaluationActivity" />
+        <activity android:name=".Public.SucceedActivity" />
+        <activity android:name=".Public.SucceedActivity1" />
+        <activity android:name=".Public.SucceedActivity2" />
+        <activity android:name=".Page2.doctor_view"></activity>
+        <activity android:name=".Page2.Doctor_select"></activity>
+        <activity android:name=".Page4.Award"></activity>
+        <activity android:name=".Page4.GetMes"></activity>
+    </application>
+
+</manifest>

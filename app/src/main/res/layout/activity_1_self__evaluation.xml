@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/titlegray"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/eva_Btn_backhome"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/titlegray"
+            android:scaleType="centerInside"
+            android:src="@drawable/leftarray"
+            />
+        <TextView
+            android:id="@+id/eva_text_title"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@color/titlegray"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginRight="120dp"
+            android:text="自我评价"
+            android:textColor="@color/darkgray"
+            android:textSize="15dp"/>
+        <TextView
+
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <com.example.wangjie.Page4.CircleImageView
+            android:id="@+id/eva_circleview"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.example.wangjie.Page4.BorderTextView
+                android:id="@+id/eva_award_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="20dp"
+                android:paddingBottom="3dp"
+                android:textSize="15dp"
+                android:textColor="@color/green"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.example.wangjie.Page4.BorderTextView1
+                    android:id="@+id/eva_award_department"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:paddingRight="18dp"
+                    android:textSize="11dp"
+                    android:textColor="@color/darkgray"
+                    />
+
+                <TextView
+                    android:id="@+id/eva_award_post"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:paddingLeft="18dp"
+                    android:textSize="11dp"
+                    android:textColor="@color/darkgray"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="-12dp"
+        android:background="@color/titlegray"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/ly_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:id="@+id/eva_commit"
+                android:text="@string/commit"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:background="@drawable/shape"
+                android:textSize="13sp"
+                android:textColor="@color/lightgreen"
+                />
+        </RelativeLayout>
+        <android.support.v7.widget.RecyclerView
+        android:id="@+id/eva_recycler_view"
+        android:layout_above="@id/ly_bottom"
+            android:layout_marginBottom="10dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+            android:overScrollMode="never"
+            >
+    </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+
+    </LinearLayout>
+
